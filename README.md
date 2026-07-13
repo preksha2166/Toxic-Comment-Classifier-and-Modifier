@@ -1,4 +1,5 @@
 # Toxic Comment Classifier and Moderator Streamlit App
+This project was developed collaboratively by Preksha Dewoolkar and Chirag Patankar as a shared AI application. Both contributors worked across the frontend, backend, and machine learning components, with responsibilities overlapping during development.
 
 This is a Streamlit web application that allows users to classify, moderate, and analyze text comments for toxicity and sentiment. It supports analyzing individual comments, processing comments in batches from a CSV file, and training a custom toxicity classification model using labeled data.
 
@@ -118,12 +119,75 @@ While the sample data shown might include label columns, the batch processing fu
 *   **Model Serialization:** Pickle
 
 The application utilizes a `Pipeline` with TF-IDF vectorization followed by a `OneVsRestClassifier` wrapping either `LogisticRegression` or `MultinomialNB` for multi-label classification.
+Project Workflow
+User Input
+      │
+      ▼
+Text Preprocessing
+      │
+      ▼
+TF-IDF Vectorization
+      │
+      ▼
+Multi-label Classifier
+      │
+      ▼
+Prediction
+      │
+      ├── Toxicity Scores
+      ├── Sentiment Analysis
+      ├── Moderation Decision
+      └── Download Results
+Training Dataset Format
+comment_text	toxic	severe_toxic	obscene	threat	insult	identity_hate
+
+Each toxicity label must contain binary values (0 or 1).
+
+Batch Processing
+
+Upload any CSV containing a comment column.
+
+The application automatically generates:
+
+Toxicity predictions
+Toxicity probabilities
+Sentiment
+Moderation recommendation
 
 ## Creators
 
-* **Preksha Dewoolkar**
-* **Chirag Patankar**
+This project was developed collaboratively by Preksha Dewoolkar and Chirag Patankar.
 
+Preksha Dewoolkar
+Designed and developed significant portions of the Streamlit user interface.
+Implemented backend application workflows for user interaction and data processing.
+Contributed to the AI pipeline integration, prediction workflow, and overall application architecture.
+Worked on model training workflow, visualization features, and usability improvements.
+Improved application structure, debugging, testing, and user experience.
+
+Chirag Patankar
+Contributed to the machine learning pipeline and model development.
+Assisted with data preprocessing and toxicity classification implementation.
+Worked on backend logic, feature development, and project integration.
+Collaborated on testing, optimization, and deployment.
+
+This was a collaborative project where both contributors participated across multiple parts of the application, including AI, backend, and frontend development.
+
+Authors
+
+Preksha Dewoolkar
+
+AI Engineer | Full Stack Developer | Machine Learning Enthusiast | Aspiring FDE engineer
+
+GitHub: https://github.com/preksha2166
+
+LinkedIn: https://linkedin.com/in/preksha-dewoolkar
+
+Chirag Patankar
+
+AI Engineer | Full Stack Developer | Machine Learning Enthusiast | Aspiring FDE engineer
+
+GitHub: https://github.com/ChiragPatankar
 ## Contributing
 
 Feel free to fork the repository and submit pull requests. Issues and feature requests are welcome!
