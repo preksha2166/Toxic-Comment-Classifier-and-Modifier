@@ -1,4 +1,4 @@
-# Toxic Comment Classifier and Moderator Streamlit App
+# AI-Toxic-Comment-Moderator
 This project was developed collaboratively by Preksha Dewoolkar and Chirag Patankar as a shared AI application. Both contributors worked across the frontend, backend, and machine learning components, with responsibilities overlapping during development.
 
 This is a Streamlit web application that allows users to classify, moderate, and analyze text comments for toxicity and sentiment. It supports analyzing individual comments, processing comments in batches from a CSV file, and training a custom toxicity classification model using labeled data.
